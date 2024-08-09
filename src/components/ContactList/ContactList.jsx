@@ -3,7 +3,7 @@ import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 
 const ContactList = () => {
-  const contacts = useSelector((state) => state.contacts.items);
+  const contacts = useSelector((state) => state.contacts);
   return (
     <ul>
       {contacts.map((contact) => {
